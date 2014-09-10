@@ -1,5 +1,3 @@
-require 'mail'
-
 module CongressPeopleHelper
 	def party_name(congress_person)
 		return "democrat" if congress_person.party == "D"

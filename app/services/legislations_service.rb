@@ -1,6 +1,6 @@
 require 'open-uri'
 require 'json'
-module LegislationsHelper
+module LegislationsService
 	class << self
 	  def search_by_date_fedreg(date_as_string)
 			url = "https://www.federalregister.gov/api/v1/articles.json?&conditions%5Beffective_date%5D%5Bis%5D=#{date_as_string}"
