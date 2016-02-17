@@ -9,7 +9,7 @@ class TwitterService
 		CongressPerson.all.each do |c|
 			last_names << c.last_name
 		end
-		return last_names.take(299).join(',')
+		return last_names.take(200).join(',')
 	end
 
 	def self.run
